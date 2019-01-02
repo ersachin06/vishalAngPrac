@@ -1,0 +1,17 @@
+<!-- <p>
+  c10rating works! {{prodRating}}
+</p> -->
+{{prodRating}}
+<div>
+  <div *ngIf="prodRating>3"  class="bg-success">
+    Excellent
+  </div>
+  <div *ngIf="prodRating>2 && prodRating<=3"  class="bg-primary">
+      Good
+  </div>
+  <div *ngIf="prodRating<=2"  class="bg-warning">
+        poor
+  </div>
+</div>
+
+{{category|json}}
